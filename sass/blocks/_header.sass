@@ -1,0 +1,137 @@
+.header
+  padding-top: 24px
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-navbar
+    &__close
+      display: none
+  &-link
+    text-decoration: none
+    font-weight: normal
+    font-size: 14px
+    line-height: 150%
+    color: $text-color
+    margin-right: 40px
+    &:last-child
+      margin-right: 0
+    &.selected
+      position: relative
+      color: $link-color
+      font-weight: 600
+      line-height: 150%
+      &::after
+        content: ''
+        position: absolute
+        width: 62px
+        height: 2px
+        right: -5px
+        bottom: -5px
+        background-color: $link-color
+  &-phone
+    &__number
+      text-decoration: none
+      font-weight: normal
+      font-size: 14px
+      line-height: 150%
+      color: $text-color
+      span
+        font-weight: 600
+.logo
+  width: 277px
+  height: 74px
+.menu
+  &-button
+    display: none
+    width: 22px
+    height: 17px
+    align-items: center
+    justify-content: space-between
+    flex-direction: column
+    border: none
+    outline: none
+    background-color: transparent
+    cursor: pointer
+    &__line
+      width: 22px
+      height: 2px
+      background-color: #336B9C
+
+// // max-width: 1680px
+  // @media (max-width: 1680px)
+
+// // max-width: 1366px
+// @media (max-width: 1366px)
+
+// max-width: 1199px
+@media (max-width: 1199px)
+  .logo
+    width: 250px
+  .header
+    &-link
+      margin-right: 20px
+      font-size: 12px
+    &-phone
+      &__number
+        font-size: 12px
+
+  // max-width: 991px
+@media (max-width: 991px)
+  .logo
+    width: 277px
+    height: 74px
+
+  .header
+    &-link
+      margin-right: 10px
+      &.selected::after
+        left: 58px
+      &--visible
+        margin-bottom: 20px
+    &-navbar
+      display: none
+      position: fixed
+      &--visible
+        display: flex
+        flex-direction: column
+        top: 10px
+        left: 8px
+        right: 8px
+        padding: 36px 24px
+        background-color: $white
+      &__close
+        &--mobile
+          &--visible
+            display: block
+            position: absolute
+            top: 16px
+            right: 20px
+
+    &-phone
+      &__number
+        font-size: 16px
+  .menu
+    &-button
+      display: flex
+
+// @media (max-width: 768px)
+
+// max-width: 576px
+@media (max-width: 576px)
+  .logo
+    width: 200px
+    height: 100%
+
+  .header
+    padding-top: 19px
+    &-phone
+      &__number
+        font-size: 12px
+
+// max-width: 400px
+@media (max-width: 400px)
+  .logo
+
+// // max-width: 320px
+//   @media (max-width: 320px)

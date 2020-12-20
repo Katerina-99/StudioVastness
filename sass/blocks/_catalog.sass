@@ -1,0 +1,245 @@
+.catalog
+  margin-top: 87px
+  margin-bottom: 65px
+  &__header
+    margin-bottom: 49px
+  &-items
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -1.5px 0 -1.5px
+  &-card
+    position: relative
+    width: 320px
+    height: 410px
+    overflow: hidden
+    cursor: pointer
+    margin: 0 1.5px 0 1.5px
+    margin-bottom: 50px
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background: radial-gradient(61.87% 38.43% at 30.63% 50%, rgba(255, 255, 255, 0) 15.54%, #0D0D0D 100%)
+      opacity: 0.3
+      z-index: -2
+    &:hover::after
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background: linear-gradient(56.35deg, #6EBBFF 12.26%, #38F6FF 85.74%)
+      opacity: 0.4
+      background: linear-gradient(86.45deg, #4481EB -0.39%, #04BEFE 99.61%)
+      opacity: 0.8
+      z-index: -1
+    &:hover
+      top: -20px
+      height: 450px
+      margin-bottom: -20px
+    &:hover .card-link__more
+      display: block
+    &__image
+      position: absolute
+      z-index: -3
+      background-repeat: no-repeat
+      object-fit: cover
+      height: 100%
+
+.card
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  height: 100%
+  padding: 30px 0 30px 30px
+  &__description
+    &-adres
+      margin: 0
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 150%
+      color: $white
+    &-down
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+    &-line
+      width: 60px
+      height: 1px
+      margin: 0
+      background-color: $white
+      border: none
+    &-title
+      margin: 0
+      margin-top: 10px
+      margin-bottom: 5px
+      font-weight: normal
+      font-size: 14px
+      line-height: 150%
+      color: $white
+    &-price
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 150%
+      color: $white
+  &-link
+    &__more
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      text-decoration: none
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 150%
+      color: $white
+      border: 2px solid $white
+      border-radius: 50%
+      padding: 66px 29px
+      opacity: 0.8
+      display: none
+
+.block
+  &-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+    &__bg
+      position: absolute
+      // width: 874px
+      // height: 144px
+      // top: -52px
+      right: 96px
+      font-style: normal
+      font-weight: 600
+      font-size: 96px
+      line-height: 150%
+      opacity: 0.2
+      z-index: -1
+      color: #BEF2FF
+    &__text
+      position: relative
+      display: flex
+      align-items: center
+    &__title
+      margin: 0
+      margin-left: 29px
+      font-weight: 600
+      font-size: 34px
+      line-height: 150%
+      color: $text-color
+    &__link
+      text-decoration: none
+      border: 2px solid #43C8FF
+      padding: 15px 40px
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 150%
+      color: $link-color
+    &__line
+      width: 506px
+      height: 2px
+      margin-left: -305px
+      background-color: $link-color
+      border: none
+
+// max-width: 1366px
+@media (max-width: 1366px)
+  .catalog
+    &-items
+      margin: 0
+      justify-content: center
+    &-card
+      width: 400px
+  .card
+    &-link
+      &__more
+        margin: 0 20px 50px 20px
+
+@media (max-width: 1199px)
+  .block
+    &-header
+      &__link
+        // font-size: 12px
+      &__title
+        // font-size: 28px
+      &__bg
+        font-size: 94px
+
+@media (max-width: 991px)
+  .catalog
+    &-card
+      width: 320px
+    &__items
+      margin-right: -10px
+      margin-left: -10px
+  .block
+    &-header
+      &__bg
+        font-size: 66px
+      &__line
+        margin-left: -406px
+      &__title
+        margin-left: 10px
+      &__link
+        padding: 10px 25px
+  .card
+    &-link
+      &__more
+        margin: 0 10px 50px 10px
+
+@media (max-width: 768px)
+  .catalog
+    &-card
+      width: 300px
+    &-items
+      margin-right: -1.5px
+      margin-left: -1.5px
+  .card
+    &-link
+      &__more
+        margin: 0 1.5px 50px 1.5px
+  .block
+    &-header
+      flex-direction: column
+      &__bg
+        right: 0
+        font-size: 56px
+        left: 10px
+      &__text
+        margin-bottom: 20px
+
+// max-width: 576px
+@media (max-width: 576px)
+  .block
+    &-header
+      &__link
+        font-size: 12px
+      &__bg
+        display: none
+  .card
+    &__description
+      &-adres
+        font-size: 12px
+      &-title
+        font-size: 12px
+      &-price
+        font-size: 12px
+    &-link
+      &__more::before
+        font-size: 14px
+
+// // max-width: 400px
+//   @media (max-width: 400px)
+
+// // max-width: 320px
+//   @media (max-width: 320px)
