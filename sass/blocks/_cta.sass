@@ -1,0 +1,116 @@
+.cta
+  &-wrapper
+    display: flex
+    align-items: center
+    position: relative
+    height: 684px
+    &::before
+      content: 'Дизайн-проект'
+      position: absolute
+      right: 0
+      top: 0
+      font-style: normal
+      font-weight: 600
+      font-size: 96px
+      line-height: 150%
+      color: #DFF9FF
+    &::after
+      content: 'в подарок'
+      position: absolute
+      right: 92px
+      top: 114px
+      opacity: 0.6
+      z-index: -1
+      font-style: normal
+      font-weight: 600
+      font-size: 96px
+      line-height: 150%
+      color: #F5FDFF
+
+  &__bg
+    position: absolute
+    width: 1100px
+    height: 508px
+    right: 0
+    top: 102px
+    z-index: -2
+    background: rgba(190, 242, 255, 0.4)
+  &__image
+    position: relative
+    margin-right: 50px
+    padding-top: 102px
+    &::before
+      content: ''
+      position: absolute
+      width: 20px
+      height: 605px
+      bottom: 27px
+      left: 80px
+      z-index: -1
+      background-color: #9AEBFE
+    img
+      width: 770px
+      height: 582px
+  &__description
+    text-align: center
+  &__title
+    margin: 0
+    margin-bottom: 30px
+    font-style: normal
+    font-weight: 600
+    font-size: 34px
+    line-height: 150%
+    color: $text-color
+  &__text
+    margin: auto
+    margin-bottom: 50px
+    max-width: 329px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 150%
+    color: $text-color
+  &__button
+    position: relative
+    padding: 18px 50px
+    border: none
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 150%
+    color: $white
+    background: linear-gradient(86.45deg, #4481EB -0.39%, #04BEFE 99.61%)
+    &::before
+      content: ''
+      position: absolute
+      width: 250px
+      height: 60px
+      left: 10px
+      top: 10px
+      z-index: -1
+      border: 2px solid #43C8FF
+
+  // // max-width: 1680px
+  // @media (max-width: 1680px)
+
+  // max-width: 1366px
+  @media (max-width: 1366px)
+    // .cta
+    //   &__image
+    //     img
+    //       width: 600px
+
+  @media (max-width: 1199px)
+    
+
+  // @media (max-width: 991px)
+  //   max-width: 94%
+
+  // @media (max-width: 768px)
+  //   max-width: 95%
+
+  // // max-width: 576px
+  //   @media (max-width: 576px)
+
+  // // max-width: 400px
+  //   @media (max-width: 400px)

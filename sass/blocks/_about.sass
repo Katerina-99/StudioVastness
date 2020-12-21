@@ -1,6 +1,7 @@
 .about
+  min-height: 935px
   &__header
-    margin-bottom: 38px
+    margin-bottom: 20px
   &-wrapper
     display: flex
   &-image
@@ -96,14 +97,21 @@
     &-image
       margin-bottom: 75px
       margin-right: 0
-      &__picture
+      &::before
+        bottom: -75px
 
 @media (max-width: 768px)
   .about
     &-image
+      margin-bottom: 31px
+      padding-top: 0
+      &::before
+        display: none
       &__picture
         width: 100%
         max-width: 579px
+      &__bg
+        display: none
     &-description
       &__lead
         font-size: 16px
@@ -119,10 +127,17 @@
 @media (max-width: 576px)
   .about
     &-image
-      padding-top: 0
-      margin-bottom: 31px
-      &__bg
-        display: none
     &-description
       &__text
         margin-bottom: 31px
+
+// max-width: 400px
+@media (max-width: 400px)
+  .about
+    &-description
+      &__item
+        margin-bottom: 30px
+        &:last-child
+          margin-bottom: 0
+      &__icon
+        margin-right: 35px
