@@ -1,0 +1,119 @@
+.about
+  &__header
+    margin-bottom: 38px
+  &-wrapper
+    display: flex
+  &-image
+    position: relative
+    padding-top: 70px
+    margin-right: 80px
+    &__picture
+      width: 579px
+      height: 549px
+      object-fit: cover
+    &__bg
+      position: absolute
+      width: 685px
+      height: 689px
+      background: rgba(190, 242, 255, 0.4)
+      top: 0
+      left: -311px
+      z-index: -2
+  &-description
+    max-width: 630px
+    &__text
+      margin-bottom: 55px
+    &__lead
+      margin: 0
+      margin-bottom: 30px
+      font-weight: normal
+      font-size: 18px
+      line-height: 150%
+      color: $text-color
+    &__excerpt
+      position: relative
+      margin: 0
+      margin-bottom: 20px
+      font-weight: normal
+      font-size: 18px
+      line-height: 150%
+      color: $text-color
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F5FDFF 100%)
+    &__link
+      text-decoration: none
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 150%
+      color: $link-color
+    &__list
+      max-width: 440px
+    &__item
+      display: flex
+      margin-bottom: 50px
+    &__icon
+      width: 70px
+      height: 70px
+      margin-right: 40px
+    &__title
+      margin: 0
+      margin-bottom: 5px
+      font-style: normal
+      font-weight: 600
+      font-size: 18px
+      line-height: 150%
+      color: $text-color
+    &__desc
+      p
+        margin: 0
+        font-weight: normal
+        font-size: 14px
+        line-height: 150%
+        color: $text-color
+
+@media (max-width: 1199px)
+  .about
+    &-wrapper
+      display: flex
+      flex-direction: column
+      align-items: center
+    &-image
+      margin-bottom: 75px
+      margin-right: 0
+      &__picture
+
+@media (max-width: 768px)
+  .about
+    &-image
+      &__picture
+        width: 100%
+        max-width: 579px
+    &-description
+      &__lead
+        font-size: 16px
+      &__excerpt
+        font-size: 16px
+      &__title
+        font-size: 16px
+      &__icon
+        width: 65px
+        height: 65px
+
+// max-width: 576px
+@media (max-width: 576px)
+  .about
+    &-image
+      padding-top: 0
+      margin-bottom: 31px
+      &__bg
+        display: none
+    &-description
+      &__text
+        margin-bottom: 31px
