@@ -1,4 +1,5 @@
 .cta
+  margin-bottom: 80px
   &-wrapper
     display: flex
     align-items: center
@@ -89,51 +90,61 @@
       z-index: -1
       border: 2px solid #43C8FF
 
-  // // max-width: 1680px
-  // @media (max-width: 1680px)
+// // max-width: 1680px
+// @media (max-width: 1680px)
 
-  // max-width: 1366px
-  @media (max-width: 1366px)
-    // .cta
-    //   &__image
-    //     img
-    //       width: 600px
+// max-width: 1366px
+@media (max-width: 1366px)
+  // .cta
+  //   &__image
+  //     img
+  //       width: 600px
 
-  @media (max-width: 1199px)
-    .cta
-      &__image
-        &::before
-          height: 500px
-        img
-          width: 400px
-          height: 299px
+// max-width: 1199px
+@media (max-width: 1199px)
+  .cta
+    &__image
+      &::before
+        height: 500px
+      img
+        width: 400px
+        height: 299px
 
-  @media (max-width: 991px)
-    .cta
-      &-wrapper
-        flex-direction: column
-        &::before
-          display: none
-        &::after
-          display: none
-      &__image
-        margin-right: 0
-        margin-bottom: 30px
-        padding-top: 40px
-        &::before
-          display: none
-      &__bg
+// max-width: 991px
+@media (max-width: 991px)
+  .cta
+    &-wrapper
+      flex-direction: column
+      &::before
         display: none
+      &::after
+        display: none
+    &__image
+      margin-right: 0
+      margin-bottom: 30px
+      padding-top: 40px
+      &::before
+        display: none
+    &__bg
+      display: none
 
-  // @media (max-width: 768px)
-  //   max-width: 95%
+@media (max-width: 768px)
+  .cta
+    &__title
+      font-size: 28px
+    &__text
+      font-size: 16px
 
-  // max-width: 576px
-  @media (max-width: 576px)
-    .cta
-      &__image
-        img
-          width: 370px
+// max-width: 576px
+@media (max-width: 576px)
+  .cta
+    margin-bottom: 0
+    &__image
+      padding-top: 0
+      img
+        width: 370px
+    &__title
+      font-size: 24px
 
-  // max-width: 400px
-    @media (max-width: 400px)
+// max-width: 400px
+ @media (max-width: 400px)

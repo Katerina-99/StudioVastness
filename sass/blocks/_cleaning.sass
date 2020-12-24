@@ -1,0 +1,88 @@
+.cleaning
+  margin-top: 96px
+  &__header
+    margin-bottom: 30px
+  &-wrapper
+    display: flex
+  &-image
+    position: relative
+    padding-top: 70px
+    &::before
+      content: ''
+      position: absolute
+      width: 20px
+      height: 720px
+      top: -177px
+      right: 80px
+      z-index: -1
+      background-color: #9AEBFE
+    &__picture
+      width: 630px
+      height: 410px
+      object-fit: cover
+    &__bg
+      position: absolute
+      width: 795px
+      height: 608px
+      background: rgba(190, 242, 255, 0.4)
+      top: 0
+      right: -315px
+      z-index: -2
+  &-description
+    max-width: 470px
+    margin-right: 110px
+    &__text
+      margin-bottom: 55px
+    &__lead
+      margin: 0
+      margin-bottom: 30px
+      font-weight: normal
+      font-size: 18px
+      line-height: 150%
+      color: $text-color
+    &__link
+      text-decoration: none
+      font-style: normal
+      font-weight: 600
+      font-size: 18px
+      line-height: 150%
+      color: $text-color
+    &__list
+      max-width: 440px
+    &__item
+      display: flex
+      margin-bottom: 50px
+    &__icon
+      width: 70px
+      height: 70px
+      margin-right: 40px
+    &__title
+      margin: 0
+      margin-bottom: 5px
+      font-style: normal
+      font-weight: 600
+      font-size: 18px
+      line-height: 150%
+      color: $text-color
+    &__desc
+      p
+        margin: 0
+        font-weight: normal
+        font-size: 14px
+        line-height: 150%
+        color: $text-color
+  &-down
+    &__first
+      width: 238px
+      height: 240px
+    &__second
+      width: 391px
+      height: 240px
+    &__third
+      width: 572px
+      height: 370px
+
+.block
+  &-header
+    &__bg-cleaning
+      right: 540px

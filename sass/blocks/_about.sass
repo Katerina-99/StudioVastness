@@ -1,7 +1,7 @@
 .about
   min-height: 935px
   &__header
-    margin-bottom: 20px
+    margin-bottom: 38px
   &-wrapper
     display: flex
   &-image
@@ -88,8 +88,17 @@
         line-height: 150%
         color: $text-color
 
+// max-width: 1366px
+@media (max-width: 1366px)
+  .about
+    &-image
+      margin-right: 50px
+
+// max-width: 1199px
 @media (max-width: 1199px)
   .about
+    &__header
+      margin-bottom: 49px
     &-wrapper
       display: flex
       flex-direction: column
@@ -126,6 +135,8 @@
 // max-width: 576px
 @media (max-width: 576px)
   .about
+    &__header
+      margin-bottom: 20px
     &-image
     &-description
       &__text

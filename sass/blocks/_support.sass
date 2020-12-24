@@ -1,0 +1,185 @@
+.support
+  position: relative
+  overflow: hidden
+  min-height: 874px
+  &::before
+    content: 'Юридическое сопровождение'
+    position: absolute
+    top: 0
+    right: -291px
+    font-style: normal
+    font-weight: 600
+    font-size: 96px
+    line-height: 150%
+    color: #BEF2FF
+    opacity: 0.2
+  &__header
+    position: relative
+    margin-bottom: 39px
+    margin-top: 54px
+  &-wrapper
+    display: flex
+  &-image
+    position: relative
+    padding-top: 70px
+    margin-right: 80px
+    &::before
+      content: ''
+      position: absolute
+      width: 20px
+      height: 506px
+      bottom: -125px
+      left: 80px
+      z-index: -1
+      background-color: #9AEBFE
+    &__picture
+      width: 579px
+      height: 530px
+      object-fit: cover
+    &__bg
+      position: absolute
+      width: 725px
+      height: 670px
+      background: rgba(190, 242, 255, 0.4)
+      top: 0
+      left: -311px
+      z-index: -2
+  &-description
+    max-width: 630px
+    &__text
+      margin-bottom: 50px
+    &__lead
+      margin: 0
+      margin-bottom: 30px
+      font-weight: normal
+      font-size: 18px
+      line-height: 150%
+      color: $text-color
+      &:last-child
+        margin-bottom: 0
+    &__list
+      display: flex
+      margin-bottom: 50px
+    &__item
+      display: flex
+      flex-direction: column
+      max-width: 270px
+      margin-right: 60px
+    &__icon
+      width: 70px
+      height: 70px
+      margin-bottom: 20px
+    &__title
+      margin: 0
+      margin-bottom: 5px
+      font-style: normal
+      font-weight: 600
+      font-size: 18px
+      line-height: 150%
+      color: $text-color
+    &__desc
+      p
+        margin: 0
+        font-weight: normal
+        font-size: 14px
+        line-height: 150%
+        color: $text-color
+
+  &__button
+    position: relative
+    padding: 18px 50px
+    border: none
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 150%
+    color: $white
+    background: linear-gradient(86.45deg, #4481EB -0.39%, #04BEFE 99.61%)
+    &::before
+      content: ''
+      position: absolute
+      width: 250px
+      height: 60px
+      left: 10px
+      top: 10px
+      z-index: -1
+      border: 2px solid #43C8FF
+
+// .block
+//   &-header
+//     overflow: hidden
+//     &__bg-support
+//       position: absolute
+//       right: -594px
+//       top: -39px
+//       font-style: normal
+//       font-weight: 600
+//       font-size: 96px
+//       line-height: 150%
+//       opacity: 0.2
+//       z-index: -1
+//       color: #BEF2FF
+
+// max-width: 1366px
+@media (max-width: 1366px)
+  .support
+    &::before
+      right: -567px
+    &-image
+      margin-right: 50px
+
+@media (max-width: 1199px)
+  .support
+    &::before
+      font-size: 94px
+    &__header
+      margin-bottom: 49px
+    &-wrapper
+      flex-direction: column
+      align-items: center
+    &-image
+      margin-right: 0
+      margin-bottom: 75px
+      &::before
+        bottom: -75px
+
+@media (max-width: 991px)
+  .support
+    &::before
+      right: -857px
+      font-size: 66px
+
+@media (max-width: 768px)
+  .support
+    &::before
+      font-size: 56px
+      right: -276px
+      top: 55px
+    &-image
+      padding-top: 0
+      &::before
+        display: none
+      &__bg
+        display: none
+      &__picture
+        width: 100%
+        max-width: 579px
+    &-description
+      &__icon
+        width: 65px
+        height: 65px
+      &__title
+        font-size: 16px
+      &__lead
+        font-size: 16px
+
+// max-width: 576px
+@media (max-width: 576px)
+  .support
+    &::before
+      display: none
+    &__header
+      margin-bottom: 20px
+
+  // // max-width: 400px
+  //   @media (max-width: 400px)
